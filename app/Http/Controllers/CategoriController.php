@@ -16,7 +16,7 @@ class CategoriController extends Controller
     {
         $categori = Categori::latest()->get();
 
-        return view('categori1.index', compact('categori'));
+        return view('categori.index', compact('categori'));
     }
 
     /**
@@ -26,7 +26,7 @@ class CategoriController extends Controller
      */
     public function create()
     {
-        return view('categori1.create');
+        return view('categori.create');
     }
 
     /**
@@ -69,7 +69,7 @@ class CategoriController extends Controller
     {
         $categori = Categori::find($id);
 
-        return view('categori1.edit', compact('categori'));
+        return view('categori.edit', compact('categori'));
     }
 
     /**

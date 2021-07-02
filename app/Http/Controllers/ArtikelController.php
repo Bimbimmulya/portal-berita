@@ -18,7 +18,7 @@ class ArtikelController extends Controller
     {
         $artikel = Artikel::latest()->get();
 
-        return view('artikel1.index', compact('artikel'));
+        return view('artikel.index', compact('artikel'));
     }
 
     /**
@@ -30,7 +30,7 @@ class ArtikelController extends Controller
     {
         $categori = Categori::select('id', 'nama_kategori')->get();
 
-        return view('artikel1.create', compact('categori'));
+        return view('artikel.create', compact('categori'));
     }
 
     /**
@@ -89,7 +89,7 @@ class ArtikelController extends Controller
         $categori = Categori::select('id', 'nama_kategori')->get();
         $artikel = Artikel::find($id);
 
-        return view('artikel1.edit', compact('categori', 'artikel'));
+        return view('artikel.edit', compact('categori', 'artikel'));
     }
 
     /**
