@@ -39,7 +39,7 @@
                         eum
                         verterem perpetua scribentur.</p>
                     <figure class="figure-img">
-                        <img class="img-responsive" src="./img/about-1.jpg" alt="">
+                        <img class="img-responsive" src="./img/aktualisasi.jpg" alt="">
                     </figure>
                     <p>Vix mollis admodum ei, vis legimus voluptatum ut, vis reprimique efficiendi sadipscing ut. Eam ex
                         animal
@@ -52,10 +52,10 @@
                 <div class="row section-row">
                     <div class="col-md-6">
                         <figure class="figure-img">
-                            <img class="img-responsive" src="./img/about-2.jpg" alt="">
+                            <img class="img-responsive" src="./img/foto1.jpg" alt="">
                         </figure>
                     </div>
-                    <div class="section-row">
+                    <div class="col-md-6">
                         <h3>Our Mission</h3>
                         <p>Id usu mutat debet tempor, fugit omnesque posidonium nec ei. An assum labitur ocurreret qui,
                             eam
