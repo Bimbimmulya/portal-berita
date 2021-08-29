@@ -87,7 +87,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="treeview">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li><a href="/home"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             <li><a href="<?php echo e(route('categori.index')); ?>"><i class="fa fa-adjust"></i>Categori</a></li>
             <li><a href="<?php echo e(route('artikel.index')); ?>"><i class="fa fa-pencil"></i>Artikel</a></li>
         </li>

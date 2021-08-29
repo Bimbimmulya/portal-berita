@@ -1,4 +1,4 @@
-@extends('layouts1.login')
+@extends('layouts.login')
 @section('content')
 <body class="hold-transition login-page">
     <div class="login-box">

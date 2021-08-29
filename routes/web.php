@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/admin', function () {
-    return view('login');
-});
+// Route::get('/admin', function () {
+//     // return view('login');
+// });
 
 //fornt end
 Route::get('/', 'Web\FrontController@index');

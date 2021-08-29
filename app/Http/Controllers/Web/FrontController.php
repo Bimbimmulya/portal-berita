@@ -15,7 +15,7 @@ class FrontController extends Controller
         $artikelall = Artikel::latest()->get();
         $artikelterkait = Artikel::latest()->limit(4)->get();
 
-        return view('front', compact('categori', 'artikel', 'artikelall', 'artikelterkait'));
+        return view('front.index', compact('categori', 'artikel', 'artikelall', 'artikelterkait'));
     }
 
     public function show(Artikel $artikel)
