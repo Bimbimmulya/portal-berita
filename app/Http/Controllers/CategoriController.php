@@ -16,7 +16,7 @@ class CategoriController extends Controller
     {
         $categori = Categori::latest()->get();
 
-        return view('categori.index', compact('categori'));
+        return view('admin.categoriindex', compact('categori'));
     }
 
     /**
@@ -26,7 +26,7 @@ class CategoriController extends Controller
      */
     public function create()
     {
-        return view('categori.create');
+        return view('admin.createcategori');
     }
 
     /**
@@ -44,7 +44,7 @@ class CategoriController extends Controller
         ]);
         Categori::create($request->all());
 
-        return redirect()->route('categori.index');
+        return redirect()->route('admin.categoriindex');
     }
 
     /**
@@ -69,7 +69,7 @@ class CategoriController extends Controller
     {
         $categori = Categori::find($id);
 
-        return view('categori.edit', compact('categori'));
+        return view('admin.editcategori', compact('categori'));
     }
 
     /**
@@ -85,7 +85,7 @@ class CategoriController extends Controller
         $categori = Categori::find($id);
         $categori->update($request->all());
 
-        return redirect()->route('categori.index');
+        return redirect()->route('admin.categoriindex');
     }
 
     /**
@@ -103,6 +103,6 @@ class CategoriController extends Controller
         }
         $categori->delete();
 
-        return redirect()->route('categori.index');
+        return redirect()->route('admin.categoriindex');
     }
 }

@@ -18,7 +18,7 @@ class ArtikelController extends Controller
     {
         $artikel = Artikel::latest()->get();
 
-        return view('artikel.index', compact('artikel'));
+        return view('admin.artikelindex', compact('artikel'));
     }
 
     /**
@@ -30,7 +30,7 @@ class ArtikelController extends Controller
     {
         $categori = Categori::select('id', 'nama_kategori')->get();
 
-        return view('artikel.create', compact('categori'));
+        return view('admin.createartikel', compact('categori'));
     }
 
     /**
@@ -89,7 +89,7 @@ class ArtikelController extends Controller
         $categori = Categori::select('id', 'nama_kategori')->get();
         $artikel = Artikel::find($id);
 
-        return view('artikel.edit', compact('categori', 'artikel'));
+        return view('admin.editartikel', compact('categori', 'artikel'));
     }
 
     /**
@@ -127,7 +127,7 @@ class ArtikelController extends Controller
             ]);
         }
 
-        return redirect()->route('artikel.index');
+        return redirect()->route('admin.artikelindex');
     }
 
     /**
@@ -146,6 +146,6 @@ class ArtikelController extends Controller
         Storage::delete($artikel->gambar);
         $artikel->delete();
 
-        return redirect()->route('artikel.index');
+        return redirect()->route('admin.artikelindex');
     }
 }
